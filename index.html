@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Code Selfie</title>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/codeselfie.css">
+	<link rel="stylesheet" href="css/styles/default.css" id='code-style'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="js/codeselfie.js"></script>
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Code Selfie <small>Get an Image Of you Code </small></h1>
+		</div>
+
+		<div class="alert alert-danger">Warning!: This project isn't complete and has some performence issue too large code can stop your browser :(</div>
+		
+		<div class="row">
+			<div class="col-lg-*">
+				<div class="panel panel-info">
+					<div class="panel-heading"><h3 class="panel-title">Paste your Code Here</h3>
+					</div>
+					<div class="panel-body">
+						<textarea class="form-control" id="code-area" rows="15"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-*">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">How your Code Will Be</h3>
+					</div>
+					<div class="panel-body">
+						<div><pre id='colored-code' class="hljs"></pre></div>
+						<div class="btn-group">
+       						<button id='ch' data-toggle="dropdown" class="btn btn-default dropdown-toggle">default <span class="caret"></span></button>
+	  						
+					        <ul class="dropdown-menu">
+					        	<li><a href='javascript:void(0)' id='default'>default</a></li>
+								<li><a href='javascript:void(0)' id='arta'>arta</a></li>
+								<li><a href='javascript:void(0)' id='ascetic'>ascetic</a></li>
+								<li><a href='javascript:void(0)' id='atelier-dune.dark'>atelier-dune.dark</a></li>
+								<li><a href='javascript:void(0)' id='atelier-dune.light'>atelier-dune.light</a></li>
+								<li><a href='javascript:void(0)' id='atelier-forest.dark'>atelier-forest.dark</a></li>
+								<li><a href='javascript:void(0)' id='atelier-forest.light'>atelier-forest.light</a></li>
+								<li><a href='javascript:void(0)' id='atelier-heath.dark'>atelier-heath.dark</a></li>
+								<li><a href='javascript:void(0)' id='atelier-heath.light'>atelier-heath.light</a></li>
+								<li><a href='javascript:void(0)' id='atelier-lakeside.dark'>atelier-lakeside.dark</a></li>
+								<li><a href='javascript:void(0)' id='atelier-lakeside.light'>atelier-lakeside.light</a></li>
+								<li><a href='javascript:void(0)' id='atelier-seaside.dark'>atelier-seaside.dark</a></li>
+								<li><a href='javascript:void(0)' id='atelier-seaside.light'>atelier-seaside.light</a></li>
+								<li><a href='javascript:void(0)' id='brown_paper'>brown_paper</a></li>
+								<li><a href='javascript:void(0)' id='dark'>dark</a></li>
+								<li><a href='javascript:void(0)' id='docco'>docco</a></li>
+								<li><a href='javascript:void(0)' id='far'>far</a></li>
+								<li><a href='javascript:void(0)' id='foundation'>foundation</a></li>
+								<li><a href='javascript:void(0)' id='github'>github</a></li>
+								<li><a href='javascript:void(0)' id='googlecode'>googlecode</a></li>
+								<li><a href='javascript:void(0)' id='idea'>idea</a></li>
+								<li><a href='javascript:void(0)' id='ir_black'>ir_black</a></li>
+								<li><a href='javascript:void(0)' id='magula'>magula</a></li>
+								<li><a href='javascript:void(0)' id='mono-blue'>mono-blue</a></li>
+								<li><a href='javascript:void(0)' id='monokai'>monokai</a></li>
+								<li><a href='javascript:void(0)' id='monokai_sublime'>monokai_sublime</a></li>
+								<li><a href='javascript:void(0)' id='obsidian'>obsidian</a></li>
+								<li><a href='javascript:void(0)' id='paraiso.dark'>paraiso.dark</a></li>
+								<li><a href='javascript:void(0)' id='paraiso.light'>paraiso.light</a></li>
+								<li><a href='javascript:void(0)' id='pojoaque'>pojoaque</a></li>
+								<li><a href='javascript:void(0)' id='pojoaque.jpg'>pojoaque.jpg</a></li>
+								<li><a href='javascript:void(0)' id='railscasts'>railscasts</a></li>
+								<li><a href='javascript:void(0)' id='rainbow'>rainbow</a></li>
+								<li><a href='javascript:void(0)' id='school_book'>school_book</a></li>
+								<li><a href='javascript:void(0)' id='solarized_dark'>solarized_dark</a></li>
+								<li><a href='javascript:void(0)' id='solarized_light'>solarized_light</a></li>
+								<li><a href='javascript:void(0)' id='sunburst'>sunburst</a></li>
+								<li><a href='javascript:void(0)' id='tomorrow'>tomorrow</a></li>
+								<li><a href='javascript:void(0)' id='tomorrow-night-blue'>tomorrow-night-blue</a></li>
+								<li><a href='javascript:void(0)' id='tomorrow-night-bright'>tomorrow-night-bright</a></li>
+								<li><a href='javascript:void(0)' id='tomorrow-night'>tomorrow-night</a></li>
+								<li><a href='javascript:void(0)' id='tomorrow-night-eighties'>tomorrow-night-eighties</a></li>
+								<li><a href='javascript:void(0)' id='vs'>vs</a></li>
+								<li><a href='javascript:void(0)' id='xcode'>xcode</a></li>
+								<li><a href='javascript:void(0)' id='zenburn'>zenburn</a></li>
+					        </ul>
+	  					</div>
+						<button id='download' type="button" class="btn btn-default"><span class="glyphicon glyphicon-camera"></span> Download</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="well well-lg">Code Selfie is just a mix of very usful components which are: <span class="label label-success">Jquery</span>,
+			 <span class="label label-success">Bootstrap</span>,
+			 <span class="label label-success">Highlight.js</span>,
+			 <span class="label label-success">Html2Canvas</span>
+		</div>
+	</div>
+</body>
+</html>
